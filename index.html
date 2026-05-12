@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Hub de Planilhas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./src/GRUPO-FESTA-300x300.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+         <h1><img src="./src/GRUPO-FESTA-300x300.png" class="logo" alt=""></h1>
+        <h1>📊 Central de Planilhas</h1>
+        <p>Acesse seus documentos importantes com um clique.</p>
+    </header>
+
+    <nav class="navbar">
+        
+        <div class="dropdown">
+            <button class="dropbtn">Planilhas ▼</button>
+            <div class="dropdown-content">
+                <a href="https://docs.google.com/spreadsheets/d/1q3oK8JinmKUl1XIIcUfGRLn7JVxoLqpitPTmHD7LLBU/edit?gid=991238607#gid=991238607" target="_blank">Controle mercadorias recebidas</a>
+                <a href="https://docs.google.com/spreadsheets/d/1UvoWy7aexJo2Y-hXBYNYkXSiWQZD6dxnHLKv--bX2qc/edit?gid=976797449#gid=976797449" target="_blank">Planilha de Planejamento de Produção</a>
+                <a href="https://docs.google.com/spreadsheets/d/1NA_JjpUEILImwP-5cqBhql3ek8ViptheJco8yo6fyJ8/edit?gid=280423867#gid=280423867" target="_blank">Planilha de Bipagem dos Kits de Casa</a>
+                <a href="https://docs.google.com/spreadsheets/d/1q5nEz9uC8BtCTwAEbUpuoUdW1lQOAxezytR6vKSbDIQ/edit?gid=1588772841#gid=1588772841" target="_blank">Planilha de Controle de Pedidos Expedição</a>
+                <a href="https://docs.google.com/spreadsheets/d/1PnOJHQzOHWj-tXe5Mdsqqw00aXniz3R77_cZnTZoaY0/edit?gid=843598326#gid=843598326" target="_blank">Planilha de Estoque de Balões Produzidos Expedição</a>
+            </div>
+        </div>
+
+        
+    
+        <div class="dropdown">
+            <button class="dropbtn">Planilha de Controle de Produção (Mensal)  ▼</button>
+            <div class="dropdown-content">
+                <a href="https://docs.google.com/spreadsheets/d/15Gw5rTdLKT_OM1R5iz9D2ulBGd4utcUMjmLoIgcSSk/edit?gid=722180750#gid=722180750" target="_blank">Controle de Produção Abr/26 </a>
+                <a href="URL_AQUI" target="_blank">Metas</a>
+            </div>
+        </div>
+
+        <a href="https://discord.com/channels/1068147747783446638/1068147748920098818" target="_blank" class="link-card">
+        Link do Discord
+    </a>
+        <a href="https://app.pipefy.com/pipes/306909190" target="_blank" class="link-card">
+        CRM de Compras 
+    </a>
+        <a href="https://www.appsheet.com/start/b0026ba0-3bd4-4301-9fef-37ddb64a17c6" target="_blank" class="link-card">
+        Aplicativo Controle de Pedido
+    </a>
+        <a href="https://www.appsheet.com/start/ccd9f3e1-ec39-4948-b9b3-b0bcfe009d53" target="_blank" class="link-card">
+        Aplicativo Estoque de Balões Produzidos
+    </a>
+        <a href="https://www.appsheet.com/start/b83f3a6c-ee96-4e97-9221-ab8216524164" target="_blank" class="link-card">
+        Aplicativo Estoque Mezanino (Demais produtos, exceto balões)
+    </a>
+        <a href="https://www.appsheet.com/start/7f45692f-fc6b-4b75-aedf-ef82799e58a7" target="_blank" class="link-card">
+        Aplicativo Conferência de Produção
+    </a>
+        <a href="https://www.appsheet.com/start/0ab37768-7f33-4cc3-8380-57ae7b3cbcf6" target="_blank" class="link-card">
+        Aplicativo Produção Interna
+    </a>
+     
+
+    
+
+        
+
+
+
+    </nav>
+
+    <script>
+        // Lógica para abrir ao clicar
+        document.querySelectorAll('.dropbtn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const currentDropdown = button.parentElement;
+                
+                // Fecha outros menus abertos ao clicar em um novo
+                document.querySelectorAll('.dropdown').forEach(drop => {
+                    if (drop !== currentDropdown) drop.classList.remove('active');
+                });
+
+                // Alterna o menu atual
+                currentDropdown.classList.toggle('active');
+                
+                // Impede que o clique feche o menu imediatamente
+                e.stopPropagation();
+            });
+        });
+
+        // Fecha o menu se clicar em qualquer lugar fora dele
+        window.onclick = () => {
+            document.querySelectorAll('.dropdown').forEach(drop => {
+                drop.classList.remove('active');
+            });
+        };
+    </script>
+
+</body>
+</html>
