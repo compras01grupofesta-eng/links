@@ -26,15 +26,15 @@ body {
 ========================================= */
 
 .logo{
-    width: 150px;
-    height:150px;
+    width: 100px;
+    height:100px;
     border-radius: 60px ;
 }
 
 header {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 0 10px;
 }
 
@@ -58,7 +58,7 @@ p {
     gap: 20px;
     width: 100%;
     max-width: 1100px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* =========================================
