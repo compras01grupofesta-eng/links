@@ -20,7 +20,7 @@
         <div class="dropdown">
             <button class="dropbtn">Planilhas ▼</button>
             <div class="dropdown-content">
-                <a href="https://docs.google.com/spreadsheets/d/1q3oK8JinmKUl1XIIcUfGRLn7JVxoLqpitPTmHD7LLBU/edit?gid=991238607#gid=991238607" target="_blank">Controle mercadorias recebidas</a>
+                <a href="javascript:void(0)" onclick="acessoSeguro('https://docs.google.com/spreadsheets/d/1q3oK8JinmKUl1XIIcUfGRLn7JVxoLqpitPTmHD7LLBU/edit?gid=991238607#gid=991238607')">Controle mercadorias recebidas</a>
                 <a href="https://docs.google.com/spreadsheets/d/1UvoWy7aexJo2Y-hXBYNYkXSiWQZD6dxnHLKv--bX2qc/edit?gid=976797449#gid=976797449" target="_blank">Planilha de Planejamento de Produção</a>
                 <a href="https://docs.google.com/spreadsheets/d/1NA_JjpUEILImwP-5cqBhql3ek8ViptheJco8yo6fyJ8/edit?gid=280423867#gid=280423867" target="_blank">Planilha de Bipagem dos Kits de Casa</a>
                 <a href="https://docs.google.com/spreadsheets/d/1q5nEz9uC8BtCTwAEbUpuoUdW1lQOAxezytR6vKSbDIQ/edit?gid=1588772841#gid=1588772841" target="_blank">Planilha de Controle de Pedidos Expedição</a>
@@ -94,6 +94,18 @@
                 drop.classList.remove('active');
             });
         };
+
+
+        function acessoSeguro(link) {
+    const senhaCorreta = "FESTAS2026@"; // Defina sua senha aqui
+    const tentativa = prompt("Digite a senha de acesso:");
+
+    if (tentativa === senhaCorreta) {
+        window.open(link, '_blank');
+    } else {
+        alert("Senha incorreta!");
+    }
+}
     </script>
 
 </body>
