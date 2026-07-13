@@ -87,7 +87,7 @@ p {
 }
 
 .dropbtn:hover {
-    background-color: ##C92B2C;
+    background-color: #4CAF50;
     color: white;
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
@@ -95,7 +95,7 @@ p {
 
 /* Estado Ativo (Ao clicar) */
 .dropdown.active .dropbtn {
-    background-color: ##C92B2C;
+    background-color: #4CAF50;
     color: white;
     box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
 }
@@ -178,7 +178,7 @@ p {
     justify-content: space-between;
     align-items: center;
     
-    background-color: ##C92B2C;
+    background-color: #ffffff;
     color: #333;
     padding: 22px;
     font-size: 1.1rem;
@@ -203,7 +203,7 @@ p {
 
 /* Efeito de Hover (Idêntico ao do Hub) */
 .link-card:hover {
-    background-color: ##C92B2C;
+    background-color: #4CAF50;
     color: white;
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
